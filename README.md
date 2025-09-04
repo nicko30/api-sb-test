@@ -49,3 +49,8 @@ It validates API responses and JSON schemas for company-related endpoints.
 ## Troubleshooting
 - If you encounter issues with dependencies, try running `./gradlew clean build`.
 - Ensure your JAVA_HOME environment variable points to a Java 17+ installation.
+
+## Sample Test Run Video
+You can find a sample video of a running test in the `record` folder:
+
+- `record/test_result.mov`
