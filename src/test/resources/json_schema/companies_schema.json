@@ -1,0 +1,233 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "code": {
+      "type": "integer"
+    },
+    "locale": {
+      "type": "string"
+    },
+    "seed": {
+      "type": "null"
+    },
+    "total": {
+      "type": "integer"
+    },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "vat": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          },
+          "addresses": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer",
+                  "enum": [
+                    1
+                  ]
+                },
+                "street": {
+                  "type": "string"
+                },
+                "streetName": {
+                  "type": "string"
+                },
+                "buildingNumber": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "zipcode": {
+                  "type": "string"
+                },
+                "country": {
+                  "type": "string"
+                },
+                "country_code": {
+                  "type": "string"
+                },
+                "latitude": {
+                  "type": "number"
+                },
+                "longitude": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "id",
+                "street",
+                "streetName",
+                "buildingNumber",
+                "city",
+                "zipcode",
+                "country",
+                "country_code",
+                "latitude",
+                "longitude"
+              ]
+            }
+          },
+          "website": {
+            "type": "string"
+          },
+          "image": {
+            "type": "string",
+            "enum": [
+              "http://placeimg.com/640/480/people"
+            ]
+          },
+          "contact": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer",
+                "enum": [
+                  1
+                ]
+              },
+              "firstname": {
+                "type": "string"
+              },
+              "lastname": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "phone": {
+                "type": "string"
+              },
+              "birthday": {
+                "type": "string"
+              },
+              "gender": {
+                "type": "string",
+                "enum": [
+                  "female",
+                  "male"
+                ]
+              },
+              "address": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer",
+                    "enum": [
+                      1
+                    ]
+                  },
+                  "street": {
+                    "type": "string"
+                  },
+                  "streetName": {
+                    "type": "string"
+                  },
+                  "buildingNumber": {
+                    "type": "string"
+                  },
+                  "city": {
+                    "type": "string"
+                  },
+                  "zipcode": {
+                    "type": "string"
+                  },
+                  "country": {
+                    "type": "string"
+                  },
+                  "country_code": {
+                    "type": "string"
+                  },
+                  "latitude": {
+                    "type": "number"
+                  },
+                  "longitude": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "id",
+                  "street",
+                  "streetName",
+                  "buildingNumber",
+                  "city",
+                  "zipcode",
+                  "country",
+                  "country_code",
+                  "latitude",
+                  "longitude"
+                ]
+              },
+              "website": {
+                "type": "string"
+              },
+              "image": {
+                "type": "string",
+                "enum": [
+                  "http://placeimg.com/640/480/people"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "firstname",
+              "lastname",
+              "email",
+              "phone",
+              "birthday",
+              "gender",
+              "address",
+              "website",
+              "image"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "email",
+          "vat",
+          "phone",
+          "country",
+          "addresses",
+          "website",
+          "image",
+          "contact"
+        ]
+      }
+    }
+  },
+  "required": [
+    "status",
+    "code",
+    "locale",
+    "seed",
+    "total",
+    "data"
+  ]
+}
